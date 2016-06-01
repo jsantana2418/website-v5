@@ -1,0 +1,101 @@
+/* =================================
+  Base Styles
+==================================== */
+
+body {
+  display: flex;
+  flex-direction: column;
+
+}
+.main-footer {
+  margin-top: auto;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+  .main-header,
+  .main-nav,
+  .row,
+  .col {
+    display: flex;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* You can assign an equal amount of space to columns
+  with the flex-grow and flex properties.
+  */
+  .col {
+    flex: 1 50%;
+    flex-direction: column;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .secondary {
+    order: -1;
+  }
+  /* margin-top: auto; calculates the space between the top margin and existing element */
+  .button {
+    margin-top: auto;
+    align-self: center;
+  }
+
+}
+
+@media (min-width: 1025px) {
+
+/* Giving .main-header a justify-content: space-between;
+declaration positions the site name on the left side of the header
+and the navigation menu on the right:
+*/
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*.primary {
+    flex: 2;
+  }*/
+  .col {
+    flex-basis: 0;
+  }
+  .primary {
+    flex-grow: 1.4;
+  }
+
+}
+
+/* Video review
+
+When you make body a flex container,
+it lays out all its direct children horizontally on a single line.
+Setting the flex-direction of body to column stacks its flex items vertically.
+1vh is equal to 1/100th or 1% of the viewport height.
+Sticky footer snippet
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row {
+  flex: 1;
+}
+Alternate sticky footer method
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-footer {
+  margin-top: auto;
+} */
