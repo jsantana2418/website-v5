@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="512px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css">
+   <![CDATA[
+    .fil8 {fill:#FEFEFE}
+    .fil2 {fill:#AF3C37}
+    .fil0 {fill:#DC5C4B}
+    .fil1 {fill:#DF6A5A}
+    .fil3 {fill:#DF8175}
+    .fil6 {fill:#EE6251}
+    .fil7 {fill:#F3796C}
+    .fil5 {fill:#F58C81}
+    .fil4 {fill:#F7A196}
+    .fil9 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style></defs><g id="Layer_x0020_1"><g id="_420819992"><path class="fil0" d="M324 436c95,-63 143,-95 143,-95 -94,-51 -141,-76 -141,-76 -1,114 -2,171 -2,171z"/><path class="fil1" d="M326 265c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil2" d="M466 341c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil3" d="M183 360c95,-63 143,-95 143,-95 -94,-51 -141,-76 -141,-76 -1,114 -2,171 -2,171z"/><path class="fil4" d="M185 189c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil5" d="M328 94c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil6" d="M468 170c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil5" d="M470 0c-95,63 -143,95 -143,95 94,51 141,76 141,76 1,-114 2,-171 2,-171z"/><path class="fil7" d="M326 266c95,-63 143,-95 143,-95 -94,-51 -141,-76 -141,-76 -1,114 -2,171 -2,171z"/><g><path class="fil8" d="M336 191c0,0 -39,0 -52,0 -23,0 -46,18 -46,38 0,21 16,38 40,38 2,0 3,0 5,0 -2,3 -3,6 -3,10 0,6 3,11 7,14 -3,0 -6,0 -9,0 -29,0 -51,19 -51,38 0,19 25,31 54,31 33,0 51,-19 51,-38 0,-15 -4,-24 -18,-34 -5,-3 -14,-12 -14,-16 0,-6 2,-8 10,-15 9,-7 15,-16 15,-27 0,-13 -6,-26 -17,-30l17 0 12 -8zm-18 128c0,2 1,4 1,5 0,15 -10,27 -38,27 -20,0 -35,-13 -35,-28 0,-15 18,-27 38,-27 5,0 9,1 13,2 11,8 19,12 21,21zm-32 -57c-13,0 -26,-15 -29,-33 -2,-18 7,-31 20,-31 13,0 26,15 29,32 2,18 -7,32 -20,31z"/><polygon class="fil9" points="385,189 385,267 377,267 377,189 "/><polygon class="fil9" points="342,224 420,224 420,232 342,232 "/></g></g></g></svg>

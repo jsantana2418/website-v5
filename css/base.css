@@ -23,7 +23,7 @@ p {
 h2,
 h3,
 a {
-	color: #093a58;
+	color: #97682A;
 }
 h2,
 h3 {
@@ -35,6 +35,12 @@ a {
 img {
 	max-width: 100%;
 }
+.back-up {
+	text-align: center;
+	display: block;
+	padding: 1em;
+}
+
 
 /* =================================
   Base Layout Styles
@@ -42,26 +48,32 @@ img {
 
 /* ---- Navigation ---- */
 
-.name {
-	font-size: 1.35em;
-	margin: 0;
+.js-logo {
+	width: 75px;
+	margin: 0 auto;
+}
+.main-header h2 {
+	font-size: 1em;
+	margin: -1.25em 0 0;
 }
 .main-nav {
 	margin-top: 5px;
 }
 .name a,
-.main-nav a {
+.main-nav a,
+.main-header h3 a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
 }
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: #c99065;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 .main-nav a:hover {
-	color: #093a58;
+	color: #e1c184;
 }
 
 /* ---- Layout Containers ---- */
@@ -76,7 +88,10 @@ img {
 }
 .banner {
 	color: #fff;
-	background: #3acec2;
+	background-image: url(../img/hero-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	padding: 3.2em 0;
 	margin-bottom: 48px;
 }
@@ -95,7 +110,8 @@ img {
 /* ---- Page Elements ---- */
 
 .logo {
-	width: 190px;
+		width: 200px;
+		border-radius: 50%;
 }
 .headline {
 	margin-bottom: 0;
@@ -107,16 +123,33 @@ img {
 	color: #fff;
 	text-align: center;
 	padding: .625em 1.25em;
-	background: #3acec2;
+	background: #c99065;
 	border-radius: .35em;
 }
+/*-- Footer Container --*/
+.social-icon {
+	width: 50px;
+	height: 50px;
+	margin: 0 5px;
+}
+.main-footer span {
+	display: block;
+}
+
 
 /* =================================
   Media Queries
 ==================================== */
 
+@media (min-width: 0px) and (max-width: 768px) {
+	#social-icon-container {
+		display: none; /* hide in mobile screens */
+	}
+}
+
+
 @media (min-width: 769px) {
-	.main-header,
+	
 	.row {
 		width: 90%;
 		margin: 0 auto;
@@ -124,9 +157,31 @@ img {
 	.tagline {
 		font-size: 1.4em;
 	}
+	#social-icon-container {
+		position: fixed;
+		right: 0px;
+		top: 50%;
+		width: 50px;
+		background-color: rgba(255, 255, 255, 0);
+		padding: 1px 0px 1px 0px;
+		z-index: 2000;
+	}
+
+	#social-icon-container a {
+		display: inline-block;
+		margin: 2px;
+	}
+
+	#social-icon-container img {
+		vertical-align: middle;
+	}
+	.social-icon {
+		display: none;
+	}
 }
+
 @media (min-width: 1025px) {
-	.main-header,
+
 	.row {
 		width: 80%;
 		max-width: 1150px;

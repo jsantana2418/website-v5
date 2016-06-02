@@ -38,6 +38,9 @@ body {
   .row {
     flex-wrap: wrap;
   }
+  .row > a {
+    justify-content: center;
+  }
   .secondary {
     order: -1;
   }
@@ -58,6 +61,19 @@ and the navigation menu on the right:
   .main-header {
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+  .js-logo {
+    margin: 0;
+  }
+  .main-header h2 {
+    margin-right: auto;
+    align-self: flex-end;
   }
   /*.primary {
     flex: 2;
