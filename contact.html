@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jose Santana | Web Developer</title>
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/flexbox.css">
+</head>
+
+<body id="top">
+
+	<header class="main-header">
+		<div class="js-logo">
+			<img src="img/logo.svg">
+		</div>
+		<h2 class="name"><a href="index.html">Web Developer</a></h2>
+		<ul class="main-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</header>
+	<!--/.main-header-->
+
+	<div id="social-icon-container">
+		<a href="http://www.twitter.com" target="_blank"><img src="img/twitter1.svg" border="0" alt="Twitter"></a>
+		<a href="http://www.linkedin.com" target="_blank"><img src="img/linkedin1.svg" border="0" alt="Google_Plus"></a>
+		<a href="http://www.facebook.com" target="_blank"><img src="img/facebook1.svg" border="0" alt="Facebook"></a>
+	</div>
+	<!--/.social-icon-container-->
+
+
+	<div class="banner">
+		<img class="logo" src="img/jose.jpg" alt="Picture of Me">
+		<h1 class="headline">Jose Santana</h1>
+		<span class="tagline">Dreamer // Developer // Writer</span>
+	</div>
+	<!--/.banner-->
+
+	<div class="row">
+		<div class="primary col">
+			<h2>Contact</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				In vel dignissim nisi, vitae aliquam nisi.
+				Phasellus ornare blandit elit vitae convallis.
+				orem ipsum dolor sit amet, consectetur adipiscing elit.
+				Praesent id erat maximus, convallis urna vitae,
+				placerat ipsum. Suspendisse fermentum nibh at fermentum accumsan.
+				Morbi elit magna, cursus sit amet viverra eu, semper eget lectus.
+				Integer blandit lectus orci, ut dapibus dui fermentum at.
+				Maecenas sit amet imperdiet tellus, vel pretium ante.
+				Ut vulputate pretium justo, eget tristique leo luctus a.</p>
+		</div>
+		<!--/.primary-->
+
+		<div class="secondary col">
+			<form action="contact.html" method="post">
+
+				<h1>Sign Up</h1>
+
+				<fieldset>
+					<!-- various INPUT type fields from text to password below -->
+					<legend><span class="number">1</span> Your basic info</legend>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="user_name" />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="user_email" />
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="user_password" />
+					<!-- radio button below -->
+					<label>Age:</label>
+					<input type="radio" id="under_13" value="under_13" name="user_age" />
+					<label for="under_13" class="light">Under 13</label>
+					<br />
+					<input type="radio" id="over_13" value="over_13" name="user_age" />
+					<label for="over_13" class="light">13 or Older</label>
+				</fieldset>
+
+				<fieldset>
+
+					<legend><span class="number">2</span> Your Profile</legend>
+					<!-- textarea aka comment area as commonly known as below -->
+					<label for="bio">Biography:</label>
+					<textarea id="bio" name="user_bio"></textarea>
+					<!-- select menu below -->
+					<label for="job">Job role:</label>
+					<select id="job" name="user_job">
+
+						<optgroup label="Web">
+							<option value="frontend_developer">
+								Front-End Developer
+							</option>
+							<option value="php_developer">
+								PHP Developer
+							</option>
+							<option value="python_developer">
+								Python Developer
+							</option>
+							<option value="rails_developer">
+								Rails Developer
+							</option>
+							<option value="web_designer">
+								Web Designer
+							</option>
+							<option value="wordpress_developer">
+								WordPress Developer
+							</option>
+
+						</optgroup>
+						<optgroup label="Mobile">
+							<option value="android_developer">
+								Android Developer
+							</option>
+							<option value="ios_developer">
+								iOS Developer
+							</option>
+							<option value="mobile_designer">
+								Mobile Designer
+							</option>
+
+						</optgroup>
+						<optgroup label="Business">
+							<option value="business_owner">
+								Business Owner
+							</option>
+							<option value="freelancer">
+								Freelancer
+							</option>
+						</optgroup </select>
+
+						<label>Interests:</label> <!-- checkbox below -->
+						<input type="checkbox" id="development" value="interest_development" name="user_interest" />
+						<label class="light" for="development">Development</label>
+						<br />
+						<input type="checkbox" id="design" value="interest_design" name="user_interest" />
+						<label class="light" for="design">Design</label>
+						<br />
+						<input type="checkbox" id="business" value="interest_business" name="user_interest" />
+						<label class="light" for="business">Business</label>
+				</fieldset>
+				<!-- submit below -->
+				<button type="submit">Sign Up</button>
+
+			</form>
+		</div>
+		<a href="#top" class="back-up row">^ back to top ^</a>
+	</div>
+
+	<footer class="main-footer">
+		<a href="http://twitter.com" target="_blank"><img src="img/twitter1.svg" alt="Twitter" class="social-icon"></a>
+		<a href="http://facebook.com" target="_blank"><img src="img/facebook1.svg" alt="Facebook" class="social-icon"></a>
+		<a href="http://linkedin.com" target="_blank"><img src="img/linkedin1.svg" alt="Linkedin" class="social-icon"></a>
+		<span>&copy;2015 // Jose Santana // Web Developer</span>
+	</footer>
+
+</body>
+
+</html>
