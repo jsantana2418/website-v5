@@ -8,7 +8,7 @@ body {
 
 }
 .main-footer {
-  margin-top: auto;
+  margin-top: auto; /* this creates a sticky footer */
 }
 
 /* =================================
@@ -32,7 +32,7 @@ body {
   with the flex-grow and flex properties.
   */
   .col {
-    flex: 1 50%;
+    flex: 1 50%; /* flex-grow, flex-basis are applied in order */
     flex-direction: column;
   }
   .row {
@@ -87,8 +87,7 @@ and the navigation menu on the right:
 
 }
 
-/* Video review
-
+/* 
 When you make body a flex container,
 it lays out all its direct children horizontally on a single line.
 Setting the flex-direction of body to column stacks its flex items vertically.

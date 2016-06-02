@@ -1,3 +1,7 @@
+/* Mobile First approach layout with media queries for
+larger resolutions to compensate for content layout
+*/
+
 /* =================================
   Base Element Styles
 ==================================== */
@@ -49,12 +53,12 @@ img {
 /* ---- Navigation ---- */
 
 .js-logo {
-	width: 75px;
+	width: 65px;
 	margin: 0 auto;
 }
 .main-header h2 {
 	font-size: 1em;
-	margin: -1.25em 0 0;
+	margin: -1.25em 0 0; /* pushing web developer headline closer to logo icon */
 }
 .main-nav {
 	margin-top: 5px;
@@ -149,7 +153,7 @@ img {
 
 
 @media (min-width: 769px) {
-	
+
 	.row {
 		width: 90%;
 		margin: 0 auto;
@@ -157,6 +161,7 @@ img {
 	.tagline {
 		font-size: 1.4em;
 	}
+	/* social-icon in tbe footer disppear and fixed side social-icon appear on right */
 	#social-icon-container {
 		position: fixed;
 		right: 0px;
@@ -185,5 +190,8 @@ img {
 	.row {
 		width: 80%;
 		max-width: 1150px;
+	}
+	.banner {
+		margin-top: 10em; /* pushed margin so banner didnt hide beneath banner */
 	}
 }
