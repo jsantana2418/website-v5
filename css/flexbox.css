@@ -1,6 +1,7 @@
 /* =================================
   Base Styles
 ==================================== */
+/* applied autoprefixer for browser support of flexbox*/
 
 body {
   display: -webkit-box;
