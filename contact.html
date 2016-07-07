@@ -4,6 +4,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jose Santana | Web Developer</title>
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+	<link rel="icon" type="img/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="img/png" href="favicon-16x16.png" sizes="16x16" />
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/flexbox.css">
@@ -66,17 +70,17 @@
 					<!-- various INPUT type fields from text to password below -->
 					<legend><span class="number">1</span> Your basic info</legend>
 					<label for="name">Name:</label>
-					<input type="text" id="name" name="user_name" placeholder="John Doe"/>
+					<input type="text" id="name" name="user_name" placeholder="John Doe" required/>
 
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="user_email" placeholder="john.doe@example.com"/>
+					<input type="email" id="email" name="user_email" placeholder="john.doe@example.com" required/>
 					<!-- textarea aka comment area as commonly known as below -->
 					<label for="message">Comment:</label>
-					<textarea id="message" name="message" placeholder="Ask anything about what I do!"></textarea>
+					<textarea id="message" name="message" placeholder="Ask anything about what I do!" required></textarea>
 
 				</fieldset>
 				<!-- submit below -->
-				<button type="submit">Submit</button>
+				<button class="btn-three" "type="submit">Submit</button>
 
 			</form>
 		</div>
