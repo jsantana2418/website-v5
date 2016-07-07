@@ -3,8 +3,13 @@
 ==================================== */
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 
 }
 .main-footer {
@@ -21,33 +26,52 @@ body {
   .main-nav,
   .row,
   .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
   .main-header {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
   }
   /* You can assign an equal amount of space to columns
   with the flex-grow and flex properties.
   */
   .col {
-    flex: 1 50%; /* flex-grow, flex-basis are applied in order */
-    flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%; /* flex-grow, flex-basis are applied in order */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .row {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .row > a {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .secondary {
-    order: -1;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   /* margin-top: auto; calculates the space between the top margin and existing element */
   .button {
     margin-top: auto;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 
 }
@@ -59,8 +83,13 @@ declaration positions the site name on the left side of the header
 and the navigation menu on the right:
 */
   .main-header {
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: fixed;
     background-color: #fff;
     width: 100%;
@@ -73,21 +102,25 @@ and the navigation menu on the right:
   }
   .main-header h2 {
     margin-right: auto;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   /*.primary {
     flex: 2;
   }*/
   .col {
-    flex-basis: 0;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
   .primary {
-    flex-grow: 1.4;
+    -webkit-box-flex: 1.4;
+        -ms-flex-positive: 1.4;
+            flex-grow: 1.4;
   }
 
 }
 
-/* 
+/*
 When you make body a flex container,
 it lays out all its direct children horizontally on a single line.
 Setting the flex-direction of body to column stacks its flex items vertically.
